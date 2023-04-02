@@ -1,0 +1,11 @@
+$(window).on("load",function(){
+    $(".loader-container").fadeOut(1000);
+});
+$(".hamburger").click(function(){
+    $(this).toggleClass("icon");
+    $(".nav-ul").toggleClass("change-ul");
+});
+$(".home-nav").click(function(){
+    $(".nav-ul").toggleClass("change-ul");
+    $(".hamburger").toggleClass("icon");
+});
